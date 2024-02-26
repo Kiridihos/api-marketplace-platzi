@@ -21,6 +21,7 @@ public interface ProductMapper {
             @Mapping(source = "categoria", target = "category")
 
     })
+    // Aca el mapper apunta desde Producto a Product
     Product toProduct(Producto producto);
     List<Product> toProducts(List<Producto> productos);
 
